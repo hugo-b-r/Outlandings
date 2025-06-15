@@ -58,3 +58,9 @@ canvas {
 
     transition-duration: 0.5s;
 }
+
+.leaflet-control-zoom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
