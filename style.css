@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 #map {
-    margin: auto;
+    margin: 0px;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -23,7 +24,6 @@ canvas {
     all: unset;
     flex: 1;
     margin-left: 10px;
-    margin-right: 10px;
     z-index: 1001;
 }
 
@@ -36,7 +36,7 @@ canvas {
     border: 1px solid #ebebebbd;
     border-radius: 20px;
     height: 20px;
-    width: 80%;
+    width: 90%;
     max-width: 400px;
     z-index: 1000;
     background-color: #ffffff81;
@@ -65,4 +65,16 @@ canvas {
     position: absolute;
     right: 10px;
     bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+.search_bar {
+    max-width: unset;
+    transition-duration: 0.5s;
+    left: 10px;
+    right: 10px;
+    margin: 0px;
+    width: unset;
+
+}
 }
